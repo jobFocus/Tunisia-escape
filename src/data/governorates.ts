@@ -31,7 +31,7 @@ export const governorates: Governorate[] = [
     cuisine: "Known for rose-flavored pastries and sweets. The city's name means 'the most garden-filled', reflected in its agricultural produce.",
     monuments: [
       { id: "belvedere", name: "Belvedere Park", nameAr: "حديقة البلفيدير", description: "A vast 110-hectare urban park with a zoo, Andalusian garden, and panoramic views of Tunis.", lat: 36.8222, lng: 10.1792, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Parc_du_Belv%C3%A9d%C3%A8re_Tunis.jpg/320px-Parc_du_Belv%C3%A9d%C3%A8re_Tunis.jpg" },
-      { id: "abou-nawas", name: "Abou Nawas Garden", nameAr: "حديقة أبي نواس", description: "Seaside promenade and garden along the Lake of Tunis, popular for evening strolls.", lat: 36.8150, lng: 10.1880, imageUrl: "" },
+      { id: "abou-nawas", name: "Abou Nawas Garden", nameAr: "حديقة أبي نواس", description: "Seaside promenade and garden along the Lake of Tunis, popular for evening strolls.", lat: 36.8150, lng: 10.1880, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
     ],
   },
   {
@@ -59,7 +59,7 @@ export const governorates: Governorate[] = [
     traditions: "Known for equestrian traditions — the National Stud Farm of Sidi Thabet breeds Arabian horses.",
     cuisine: "Farm-fresh dairy products, 'osban' (stuffed lamb tripe), and rustic breads baked in traditional tabouna ovens.",
     monuments: [
-      { id: "manouba-palace", name: "Manouba Palace", nameAr: "قصر منوبة", description: "19th-century Beylical palace now part of the University of Manouba, with beautiful Andalusian-style gardens.", lat: 36.8078, lng: 10.0997, imageUrl: "" },
+      { id: "manouba-palace", name: "Manouba Palace", nameAr: "قصر منوبة", description: "19th-century Beylical palace now part of the University of Manouba, with beautiful Andalusian-style gardens.", lat: 36.8078, lng: 10.0997, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Manouba_palais_la_rose_5.JPG/320px-Manouba_palais_la_rose_5.JPG" },
     ],
   },
 
@@ -77,7 +77,7 @@ export const governorates: Governorate[] = [
     monuments: [
       { id: "bizerte-medina", name: "Bizerte Medina & Kasbah", nameAr: "مدينة بنزرت العتيقة", description: "Charming old quarter with a 17th-century kasbah overlooking the port and Mediterranean.", lat: 37.2769, lng: 9.8700, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bizerte_old_harbour.jpg/320px-Bizerte_old_harbour.jpg" },
       { id: "ichkeul", name: "Ichkeul National Park", nameAr: "الحديقة الوطنية بإشكل", description: "UNESCO World Heritage wetland, vital stopover for hundreds of thousands of migratory birds.", lat: 37.1667, lng: 9.6667, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lac_Ichkeul.jpg/320px-Lac_Ichkeul.jpg" },
-      { id: "utica", name: "Utica Ruins", nameAr: "أطلال أوتيكا", description: "Ancient Phoenician-Roman city ruins, one of the oldest Phoenician settlements in North Africa.", lat: 37.0550, lng: 10.0611, imageUrl: "" },
+      { id: "utica", name: "Utica Ruins", nameAr: "أطلال أوتيكا", description: "Ancient Phoenician-Roman city ruins, one of the oldest Phoenician settlements in North Africa.", lat: 37.0550, lng: 10.0611, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ancient_Utica_02.jpg/320px-Ancient_Utica_02.jpg" },
     ],
   },
   {
@@ -91,7 +91,7 @@ export const governorates: Governorate[] = [
     traditions: "Renowned for its multicolored pottery and ceramic tiles. The annual Orange Blossom Festival celebrates the citrus harvest. Harissa-making is a cherished tradition.",
     cuisine: "The birthplace of harissa (UNESCO intangible heritage). Known for citrus-based dishes, 'kefteji' (fried vegetable mix), and orange-flower pastries.",
     monuments: [
-      { id: "neapolis", name: "Neapolis Archaeological Site", nameAr: "موقع نيابوليس الأثري", description: "Roman-era ruins including a well-preserved fish-salting factory (garum) from the 1st century AD.", lat: 36.4575, lng: 10.7328, imageUrl: "" },
+      { id: "neapolis", name: "Neapolis Archaeological Site", nameAr: "موقع نيابوليس الأثري", description: "Roman-era ruins including a well-preserved fish-salting factory (garum) from the 1st century AD.", lat: 36.4575, lng: 10.7328, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
       { id: "kelibia", name: "Kelibia Fortress", nameAr: "حصن قليبية", description: "16th-century Ottoman fortress perched on a 150m cliff with stunning views of the Mediterranean.", lat: 36.8472, lng: 11.0944, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kelibia_Fortress.jpg/320px-Kelibia_Fortress.jpg" },
       { id: "hammamet", name: "Hammamet Medina", nameAr: "مدينة الحمامات", description: "Beautiful walled medina with whitewashed buildings, jasmine-scented streets, and the 15th-century kasbah.", lat: 36.4000, lng: 10.6167, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hammamet_medina.jpg/320px-Hammamet_medina.jpg" },
     ],
@@ -108,7 +108,7 @@ export const governorates: Governorate[] = [
     cuisine: "Rosewater-flavored sweets and pastries. Mountain herbs flavor local lamb dishes. 'Bssissa' (roasted grain powder) is a traditional breakfast.",
     monuments: [
       { id: "water-temple", name: "Water Temple of Zaghouan", nameAr: "معبد المياه بزغوان", description: "Roman nymphaeum at the source of the Zaghouan Aqueduct, a monumental semi-circular sanctuary built under Hadrian.", lat: 36.3731, lng: 10.1431, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Temple_des_eaux_Zaghouan.jpg/320px-Temple_des_eaux_Zaghouan.jpg" },
-      { id: "djebel-zaghouan", name: "Djebel Zaghouan", nameAr: "جبل زغوان", description: "A 1,295m mountain offering hiking trails, panoramic views, and the marabout of Sidi Bou Gabrine.", lat: 36.3500, lng: 10.1167, imageUrl: "" },
+      { id: "djebel-zaghouan", name: "Djebel Zaghouan", nameAr: "جبل زغوان", description: "A 1,295m mountain offering hiking trails, panoramic views, and the marabout of Sidi Bou Gabrine.", lat: 36.3500, lng: 10.1167, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Djebelzaghouan.JPG/320px-Djebelzaghouan.JPG" },
     ],
   },
 
@@ -124,7 +124,7 @@ export const governorates: Governorate[] = [
     traditions: "The annual Wheat Festival celebrates the harvest. Traditional bread-making in tabouna ovens and olive oil pressing are central to local identity.",
     cuisine: "Hearty mountain cuisine — 'borghol' (cracked wheat soup), grilled lamb, and 'khobz tabouna' (traditional oven bread). Known for excellent honey and dairy.",
     monuments: [
-      { id: "beja-kasbah", name: "Kasbah of Béja", nameAr: "قصبة باجة", description: "A Byzantine-era fortress rebuilt under the Ottomans, dominating the city from its hilltop perch.", lat: 36.7250, lng: 9.1833, imageUrl: "" },
+      { id: "beja-kasbah", name: "Kasbah of Béja", nameAr: "قصبة باجة", description: "A Byzantine-era fortress rebuilt under the Ottomans, dominating the city from its hilltop perch.", lat: 36.7250, lng: 9.1833, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
       { id: "dougga", name: "Dougga", nameAr: "دقة", description: "UNESCO World Heritage site — the best-preserved Roman small town in North Africa, with a magnificent Capitol, theatre, and mausoleum.", lat: 36.4228, lng: 9.2203, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Dougga_capitole.jpg/320px-Dougga_capitole.jpg" },
     ],
   },
@@ -140,8 +140,8 @@ export const governorates: Governorate[] = [
     cuisine: "Game dishes — wild boar and partridge. Truffles foraged from oak forests. 'Mhamsa' (hand-rolled couscous) with slow-cooked lamb.",
     monuments: [
       { id: "bulla-regia", name: "Bulla Regia", nameAr: "بولا ريجيا", description: "UNESCO-listed Roman city famous for its unique underground villas with intact mosaics, built to escape summer heat.", lat: 36.5589, lng: 8.7539, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bulla_Regia_Maison_de_la_chasse.jpg/320px-Bulla_Regia_Maison_de_la_chasse.jpg" },
-      { id: "chemptou", name: "Chemtou Museum", nameAr: "متحف شمتو", description: "Ancient marble quarries that supplied the rare yellow Numidian marble to imperial Rome, with a modern museum.", lat: 36.4833, lng: 8.5833, imageUrl: "" },
-      { id: "ain-draham", name: "Ain Draham Forest", nameAr: "غابة عين دراهم", description: "Alpine-like village in cork oak forests at 800m altitude, offering hiking, thermal springs, and winter snow.", lat: 36.7833, lng: 8.7000, imageUrl: "" },
+      { id: "chemptou", name: "Chemtou Museum", nameAr: "متحف شمتو", description: "Ancient marble quarries that supplied the rare yellow Numidian marble to imperial Rome, with a modern museum.", lat: 36.4833, lng: 8.5833, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
+      { id: "ain-draham", name: "Ain Draham Forest", nameAr: "غابة عين دراهم", description: "Alpine-like village in cork oak forests at 800m altitude, offering hiking, thermal springs, and winter snow.", lat: 36.7833, lng: 8.7000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ain_Draham_s_brouillard.JPG/320px-Ain_Draham_s_brouillard.JPG" },
     ],
   },
   {
@@ -155,8 +155,8 @@ export const governorates: Governorate[] = [
     traditions: "The Sidi Bou Makhlouf Festival celebrates Sufi heritage. Traditional weaving of woolen burnous (cloaks) and carpets.",
     cuisine: "Known for 'borzgane' (sweet couscous with dried fruits and nuts), 'kammounia' (cumin-spiced liver stew), and mountain honey.",
     monuments: [
-      { id: "le-kef-kasbah", name: "Kasbah of Le Kef", nameAr: "قصبة الكاف", description: "18th-century Ottoman fortress with panoramic views over the Medjerda plains and into Algeria.", lat: 36.1819, lng: 8.7069, imageUrl: "" },
-      { id: "le-kef-basilica", name: "Basilica of St. Peter", nameAr: "بازيليك القديس بطرس", description: "5th-century Byzantine basilica with remnants of mosaic floors and a baptistery.", lat: 36.1750, lng: 8.7031, imageUrl: "" },
+      { id: "le-kef-kasbah", name: "Kasbah of Le Kef", nameAr: "قصبة الكاف", description: "18th-century Ottoman fortress with panoramic views over the Medjerda plains and into Algeria.", lat: 36.1819, lng: 8.7069, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/El_Kasbah_-_Le_Kef_%285410398636%29.jpg/320px-El_Kasbah_-_Le_Kef_%285410398636%29.jpg" },
+      { id: "le-kef-basilica", name: "Basilica of St. Peter", nameAr: "بازيليك القديس بطرس", description: "5th-century Byzantine basilica with remnants of mosaic floors and a baptistery.", lat: 36.1750, lng: 8.7031, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Le_Kef_-_Abside_de_la_basilique_Saint-Pierre.jpg/320px-Le_Kef_-_Abside_de_la_basilique_Saint-Pierre.jpg" },
     ],
   },
   {
@@ -187,7 +187,7 @@ export const governorates: Governorate[] = [
     cuisine: "Seafood along the port — grilled sardines, 'calamar farci' (stuffed squid). 'Rfissa' (layered pastry with chicken and fenugreek sauce) is a festive dish.",
     monuments: [
       { id: "sousse-medina", name: "Medina of Sousse", nameAr: "مدينة سوسة العتيقة", description: "UNESCO World Heritage walled city with narrow alleys, souks, and the impressive Ribat fortress-monastery.", lat: 35.8333, lng: 10.6333, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sousse_Ribat.jpg/320px-Sousse_Ribat.jpg" },
-      { id: "sousse-museum", name: "Sousse Archaeological Museum", nameAr: "المتحف الأثري بسوسة", description: "Housed in the 11th-century kasbah, featuring one of Tunisia's finest Roman mosaic collections.", lat: 35.8217, lng: 10.6353, imageUrl: "" },
+      { id: "sousse-museum", name: "Sousse Archaeological Museum", nameAr: "المتحف الأثري بسوسة", description: "Housed in the 11th-century kasbah, featuring one of Tunisia's finest Roman mosaic collections.", lat: 35.8217, lng: 10.6353, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
       { id: "port-el-kantaoui", name: "Port El Kantaoui", nameAr: "مرسى القنطاوي", description: "Picturesque marina resort town built in traditional Tunisian style with a golf course and sandy beaches.", lat: 35.8833, lng: 10.6000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Port_El_Kantaoui.jpg/320px-Port_El_Kantaoui.jpg" },
     ],
   },
@@ -218,7 +218,7 @@ export const governorates: Governorate[] = [
     cuisine: "Renowned for 'couscous bil samak' (fish couscous) — considered Tunisia's best. Grilled octopus and cuttlefish are local specialties. Sweet 'makroudh' (date pastries).",
     monuments: [
       { id: "mahdia-medina", name: "Mahdia Medina & Skifa Kahla", nameAr: "سقيفة الكحلة", description: "The massive 10th-century fortified gate (Skifa Kahla) leads into the charming medina on the peninsula.", lat: 35.5042, lng: 11.0683, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Skifa_Kahla_Mahdia.jpg/320px-Skifa_Kahla_Mahdia.jpg" },
-      { id: "mahdia-cemetery", name: "Fatimid Marine Cemetery", nameAr: "مقبرة البحر", description: "Ancient seaside cemetery with white tombs overlooking the Mediterranean, dating from Fatimid times.", lat: 35.5083, lng: 11.0736, imageUrl: "" },
+      { id: "mahdia-cemetery", name: "Fatimid Marine Cemetery", nameAr: "مقبرة البحر", description: "Ancient seaside cemetery with white tombs overlooking the Mediterranean, dating from Fatimid times.", lat: 35.5083, lng: 11.0736, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
       { id: "el-jem", name: "Amphitheatre of El Jem", nameAr: "مسرح الجم", description: "UNESCO World Heritage — the third-largest Roman amphitheatre in the world, rivaling Rome's Colosseum.", lat: 35.2964, lng: 10.7069, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Amphitheatre_of_El_Jem.jpg/320px-Amphitheatre_of_El_Jem.jpg" },
     ],
   },
@@ -234,8 +234,8 @@ export const governorates: Governorate[] = [
     cuisine: "Famous for 'charmoula' (flavorful marinade for fish), 'marka' (slow-cooked meat stews), and a unique variation of 'couscous sfaxi'. The port supplies the country's best seafood.",
     monuments: [
       { id: "sfax-medina", name: "Medina of Sfax", nameAr: "مدينة صفاقس العتيقة", description: "Impeccably preserved 9th-century walled medina with monumental gates, covered souks, and the Great Mosque.", lat: 34.7369, lng: 10.7617, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sfax_medina.jpg/320px-Sfax_medina.jpg" },
-      { id: "sfax-kasbah", name: "Kasbah of Sfax", nameAr: "قصبة صفاقس", description: "16th-century fortress housing an architectural museum and offering views over the medina and port.", lat: 34.7342, lng: 10.7631, imageUrl: "" },
-      { id: "kneiss-islands", name: "Kneiss Islands", nameAr: "جزر الكنائس", description: "Pristine archipelago and Ramsar wetland site, a paradise for birdwatchers with flamingos and migratory birds.", lat: 34.3667, lng: 10.3167, imageUrl: "" },
+      { id: "sfax-kasbah", name: "Kasbah of Sfax", nameAr: "قصبة صفاقس", description: "16th-century fortress housing an architectural museum and offering views over the medina and port.", lat: 34.7342, lng: 10.7631, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Les_murs_de_la_medina_de_sfax_du_cot%C3%A9_kasbah.jpg/320px-Les_murs_de_la_medina_de_sfax_du_cot%C3%A9_kasbah.jpg" },
+      { id: "kneiss-islands", name: "Kneiss Islands", nameAr: "جزر الكنائس", description: "Pristine archipelago and Ramsar wetland site, a paradise for birdwatchers with flamingos and migratory birds.", lat: 34.3667, lng: 10.3167, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
     ],
   },
 
@@ -253,7 +253,7 @@ export const governorates: Governorate[] = [
     monuments: [
       { id: "great-mosque-kairouan", name: "Great Mosque of Kairouan", nameAr: "جامع عقبة بن نافع", description: "One of the oldest and most important mosques in the Islamic world, with a massive 9th-century minaret and pillared prayer hall.", lat: 35.6814, lng: 10.1011, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Kairouan.jpg/320px-Great_Mosque_of_Kairouan.jpg" },
       { id: "aghlabid-basins", name: "Aghlabid Basins", nameAr: "أحواض الأغالبة", description: "9th-century hydraulic marvel — two enormous circular water reservoirs that supplied the city, a testament to medieval Arab engineering.", lat: 35.6850, lng: 10.1000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bassins_des_Aghlabides_Kairouan.jpg/320px-Bassins_des_Aghlabides_Kairouan.jpg" },
-      { id: "sidi-sahbi", name: "Mausoleum of Sidi Sahbi", nameAr: "زاوية سيدي الصحبي", description: "Beautiful 17th-century complex (Mosque of the Barber) with exquisite tilework, stucco, and a peaceful courtyard.", lat: 35.6783, lng: 10.0981, imageUrl: "" },
+      { id: "sidi-sahbi", name: "Mausoleum of Sidi Sahbi", nameAr: "زاوية سيدي الصحبي", description: "Beautiful 17th-century complex (Mosque of the Barber) with exquisite tilework, stucco, and a peaceful courtyard.", lat: 35.6783, lng: 10.0981, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mosque_of_the_Barber_%28Mausoleum_of_Sidi_Sahabi%29.jpg/320px-Mosque_of_the_Barber_%28Mausoleum_of_Sidi_Sahabi%29.jpg" },
     ],
   },
   {
@@ -268,7 +268,7 @@ export const governorates: Governorate[] = [
     cuisine: "Lamb and goat dishes dominate — 'mechoui' (slow-roasted lamb). Wild herbs and thyme flavor rustic stews. Mountain honey and 'bsissa' are staples.",
     monuments: [
       { id: "sbeitla", name: "Sbeitla (Sufetula)", nameAr: "سبيطلة", description: "Incredibly well-preserved Roman city with three adjacent temples to Jupiter, Juno, and Minerva, plus Byzantine fortifications.", lat: 35.2306, lng: 9.1294, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sbeitla_temples.jpg/320px-Sbeitla_temples.jpg" },
-      { id: "chambi", name: "Djebel Chambi National Park", nameAr: "الحديقة الوطنية بالشعانبي", description: "Tunisia's highest peak (1,544m) with Aleppo pine forests, panoramic views, and hiking trails.", lat: 35.1833, lng: 8.7000, imageUrl: "" },
+      { id: "chambi", name: "Djebel Chambi National Park", nameAr: "الحديقة الوطنية بالشعانبي", description: "Tunisia's highest peak (1,544m) with Aleppo pine forests, panoramic views, and hiking trails.", lat: 35.1833, lng: 8.7000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Djebel_Chambi.jpg/320px-Djebel_Chambi.jpg" },
     ],
   },
   {
@@ -282,7 +282,7 @@ export const governorates: Governorate[] = [
     traditions: "Agricultural festivals celebrate the olive and vegetable harvests. Horse and camel breeding traditions continue in the countryside.",
     cuisine: "Olive oil from Sidi Bouzid is among Tunisia's most prized. Vegetable-based dishes — 'tajine maadnous' (egg and parsley bake), stuffed peppers, and 'chakchouka'.",
     monuments: [
-      { id: "sidi-bouzid-museum", name: "Revolution Museum", nameAr: "متحف الثورة", description: "Museum commemorating the Tunisian Revolution that began here in December 2010, sparking the Arab Spring.", lat: 35.0333, lng: 9.4894, imageUrl: "" },
+      { id: "sidi-bouzid-museum", name: "Revolution Museum", nameAr: "متحف الثورة", description: "Museum commemorating the Tunisian Revolution that began here in December 2010, sparking the Arab Spring.", lat: 35.0333, lng: 9.4894, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
     ],
   },
 
@@ -298,7 +298,7 @@ export const governorates: Governorate[] = [
     traditions: "The annual Festival of the Oasis celebrates the region's unique ecosystem. Traditional henna art and basket weaving from palm fronds are local crafts.",
     cuisine: "Oasis produce — pomegranates, dates, and aromatic herbs. Spicy 'merguez' sausages and 'brik à l'oeuf' are popular. Seafood from the Gulf of Gabès.",
     monuments: [
-      { id: "gabes-oasis", name: "Gabès Maritime Oasis", nameAr: "واحة قابس", description: "The only coastal oasis on the Mediterranean — 300 hectares of palm groves, fruit trees, and gardens right by the sea.", lat: 33.8833, lng: 10.0833, imageUrl: "" },
+      { id: "gabes-oasis", name: "Gabès Maritime Oasis", nameAr: "واحة قابس", description: "The only coastal oasis on the Mediterranean — 300 hectares of palm groves, fruit trees, and gardens right by the sea.", lat: 33.8833, lng: 10.0833, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
       { id: "matmata", name: "Matmata Troglodyte Houses", nameAr: "منازل مطماطة", description: "Iconic underground Berber dwellings carved into the earth, famously featured in Star Wars as Luke Skywalker's home.", lat: 33.5428, lng: 9.9686, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Matmata_cave_dwelling.jpg/320px-Matmata_cave_dwelling.jpg" },
     ],
   },
@@ -344,8 +344,8 @@ export const governorates: Governorate[] = [
     traditions: "The International Festival of Gafsa celebrates music and desert culture. Traditional carpet weaving with distinctive red-and-black geometric patterns.",
     cuisine: "Oasis dates — especially the prized Deglet Nour variety. 'Hrissa hloua' (sweet chili paste) is a local condiment. Lamb and vegetable tagines.",
     monuments: [
-      { id: "gafsa-pools", name: "Roman Pools of Gafsa", nameAr: "الأحواض الرومانية بقفصة", description: "Ancient Roman thermal baths still in use today, with natural warm mineral waters in a historic setting.", lat: 34.4219, lng: 8.7864, imageUrl: "" },
-      { id: "gafsa-kasbah", name: "Kasbah of Gafsa", nameAr: "قصبة قفصة", description: "16th-century fortress overlooking the oasis with a small museum of local archaeology and crafts.", lat: 34.4181, lng: 8.7833, imageUrl: "" },
+      { id: "gafsa-pools", name: "Roman Pools of Gafsa", nameAr: "الأحواض الرومانية بقفصة", description: "Ancient Roman thermal baths still in use today, with natural warm mineral waters in a historic setting.", lat: 34.4219, lng: 8.7864, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
+      { id: "gafsa-kasbah", name: "Kasbah of Gafsa", nameAr: "قصبة قفصة", description: "16th-century fortress overlooking the oasis with a small museum of local archaeology and crafts.", lat: 34.4181, lng: 8.7833, imageUrl: "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80" },
     ],
   },
   {
@@ -361,7 +361,7 @@ export const governorates: Governorate[] = [
     monuments: [
       { id: "tozeur-medina", name: "Medina of Tozeur (Ouled El Hadef)", nameAr: "مدينة توزر العتيقة", description: "Enchanting old quarter famous for its intricate geometric brick facades — a unique architectural style found nowhere else.", lat: 33.9208, lng: 8.1353, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tozeur_medina.jpg/320px-Tozeur_medina.jpg" },
       { id: "chebika", name: "Chebika Oasis", nameAr: "واحة الشبيكة", description: "Stunning mountain oasis with a waterfall cascading into a palm-filled canyon — one of Tunisia's most beautiful natural sites.", lat: 34.3236, lng: 7.9472, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chebika_oasis.jpg/320px-Chebika_oasis.jpg" },
-      { id: "ong-jemel", name: "Ong Jemel (Neck of the Camel)", nameAr: "عنق الجمل", description: "Iconic rock formation in the Sahara, featured in Star Wars and The English Patient, offering dramatic desert vistas.", lat: 34.0000, lng: 8.0000, imageUrl: "" },
+      { id: "ong-jemel", name: "Ong Jemel (Neck of the Camel)", nameAr: "عنق الجمل", description: "Iconic rock formation in the Sahara, featured in Star Wars and The English Patient, offering dramatic desert vistas.", lat: 34.0000, lng: 8.0000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ong_Jmal_Tunisia.jpg/320px-Ong_Jmal_Tunisia.jpg" },
     ],
   },
   {

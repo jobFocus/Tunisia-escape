@@ -15,6 +15,7 @@ interface RegionPanelProps {
   selectedGovernorate: Governorate | null;
   onGovernorateClick: (gov: Governorate) => void;
   onRequestRoute: (monuments: Monument[]) => void;
+  onMonumentSelect: (monument: Monument) => void;
 }
 
 export default function RegionPanel({
@@ -22,6 +23,7 @@ export default function RegionPanel({
   selectedGovernorate,
   onGovernorateClick,
   onRequestRoute,
+  onMonumentSelect,
 }: RegionPanelProps) {
   if (!selectedRegion && !selectedGovernorate) {
     return (
@@ -142,7 +144,7 @@ export default function RegionPanel({
 
           <div className="space-y-3">
             {allMonuments.map((mon) => (
-              <MonumentCard key={mon.id} monument={mon} />
+              <MonumentCard key={mon.id} monument={mon} onSelect={onMonumentSelect} />
             ))}
           </div>
         </div>
@@ -151,9 +153,12 @@ export default function RegionPanel({
   );
 }
 
-function MonumentCard({ monument }: { monument: Monument }) {
+function MonumentCard({ monument, onSelect }: { monument: Monument; onSelect: (m: Monument) => void }) {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <div
+      className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+      onClick={() => onSelect(monument)}
+    >
       {monument.imageUrl && (
         <img
           src={monument.imageUrl}

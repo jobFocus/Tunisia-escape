@@ -1,12 +1,15 @@
 import { useState, useCallback } from "react";
 import MapView from "./components/MapView";
 import RegionPanel from "./components/RegionPanel";
+import MonumentPopup from "./components/MonumentPopup";
 import type { Region, Governorate, Monument } from "./data/regions";
+import { governorates } from "./data/governorates";
 
 function App() {
   const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
   const [selectedGovernorate, setSelectedGovernorate] = useState<Governorate | null>(null);
   const [routeWaypoints, setRouteWaypoints] = useState<[number, number][] | null>(null);
+  const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
 
   const handleRegionSelect = useCallback((region: Region) => {
     setSelectedRegion(region);
@@ -23,6 +26,24 @@ function App() {
     setRouteWaypoints(waypoints);
   }, []);
 
+  const handleMonumentSelect = useCallback((monument: Monument) => {
+    setSelectedMonument(monument);
+  }, []);
+
+  const handleCloseMonument = useCallback(() => {
+    setSelectedMonument(null);
+  }, []);
+
+  const handleNavigateToMonument = useCallback((monument: Monument) => {
+    const gov = governorates.find((g) =>
+      g.monuments.some((m) => m.id === monument.id)
+    );
+    if (gov) {
+      handleGovernorateSelect(gov);
+    }
+    setSelectedMonument(null);
+  }, [handleGovernorateSelect]);
+
   return (
     <div className="flex w-full h-screen">
       <div className="flex-1 relative">
@@ -32,9 +53,9 @@ function App() {
         <MapView
           onRegionSelect={handleRegionSelect}
           onGovernorateSelect={handleGovernorateSelect}
-          selectedRegionId={selectedRegion?.id ?? null}
           selectedGovernorateId={selectedGovernorate?.id ?? null}
           routeWaypoints={routeWaypoints}
+          onMonumentSelect={handleMonumentSelect}
         />
       </div>
       <aside className="w-[380px] border-l border-gray-200 bg-white shadow-lg overflow-hidden flex flex-col">
@@ -43,8 +64,16 @@ function App() {
           selectedGovernorate={selectedGovernorate}
           onGovernorateClick={handleGovernorateSelect}
           onRequestRoute={handleRequestRoute}
+          onMonumentSelect={handleMonumentSelect}
         />
       </aside>
+      {selectedMonument && (
+        <MonumentPopup
+          monument={selectedMonument}
+          onClose={handleCloseMonument}
+          onNavigate={handleNavigateToMonument}
+        />
+      )}
     </div>
   );
 }
