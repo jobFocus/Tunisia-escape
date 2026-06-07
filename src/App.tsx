@@ -10,7 +10,7 @@ function App() {
   const [routeWaypoints, setRouteWaypoints] = useState<[number, number][] | null>(null);
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
 
-  const handleRegionSelect = useCallback((region: Region) => {
+  const handleRegionSelect = useCallback((_region: Region) => {
     setSelectedGovernorate(null);
     setRouteWaypoints(null);
   }, []);
