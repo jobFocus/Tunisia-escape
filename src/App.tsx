@@ -17,8 +17,14 @@ function App() {
     setRouteWaypoints(null);
   }, []);
 
-  const handleGovernorateSelect = useCallback((gov: Governorate) => {
+  const handleGovernorateSelect = useCallback((gov: Governorate | null) => {
     setSelectedGovernorate(gov);
+  }, []);
+
+  const handleClearSelection = useCallback(() => {
+    setSelectedRegion(null);
+    setSelectedGovernorate(null);
+    setRouteWaypoints(null);
   }, []);
 
   const handleRequestRoute = useCallback((monuments: Monument[]) => {
@@ -63,6 +69,7 @@ function App() {
           selectedRegion={selectedRegion}
           selectedGovernorate={selectedGovernorate}
           onGovernorateClick={handleGovernorateSelect}
+          onClearSelection={handleClearSelection}
           onRequestRoute={handleRequestRoute}
           onMonumentSelect={handleMonumentSelect}
         />

@@ -15,6 +15,8 @@ export interface Governorate {
   regionId: string;
   lat: number;
   lng: number;
+  population: string;
+  area: string;
   culture: string;
   traditions: string;
   cuisine: string;

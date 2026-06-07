@@ -1,5 +1,6 @@
 import type { Region, Governorate, Monument } from "../data/regions";
 import { governorates } from "../data/governorates";
+import { regions } from "../data/regions";
 
 const colors: Record<string, string> = {
   "grand-tunis": "#e74c3c",
@@ -10,10 +11,20 @@ const colors: Record<string, string> = {
   sud: "#e67e22",
 };
 
+const regionNames: Record<string, string> = {
+  "grand-tunis": "Grand Tunis",
+  "nord-est": "Nord-Est",
+  "nord-ouest": "Nord-Ouest",
+  "centre-est": "Centre-Est",
+  "centre-ouest": "Centre-Ouest",
+  sud: "Sud",
+};
+
 interface RegionPanelProps {
   selectedRegion: Region | null;
   selectedGovernorate: Governorate | null;
-  onGovernorateClick: (gov: Governorate) => void;
+  onGovernorateClick: (gov: Governorate | null) => void;
+  onClearSelection: () => void;
   onRequestRoute: (monuments: Monument[]) => void;
   onMonumentSelect: (monument: Monument) => void;
 }
@@ -22,133 +33,169 @@ export default function RegionPanel({
   selectedRegion,
   selectedGovernorate,
   onGovernorateClick,
+  onClearSelection,
   onRequestRoute,
   onMonumentSelect,
 }: RegionPanelProps) {
-  if (!selectedRegion && !selectedGovernorate) {
+  if (!selectedGovernorate) {
+    const regionIds = Object.keys(colors);
+
     return (
-      <div className="flex flex-col items-center justify-center h-full text-gray-500 p-6">
-        <div className="text-6xl mb-4">🗺️</div>
-        <h2 className="text-xl font-semibold text-gray-700 mb-2">
-          Tunisia Tourist Map
-        </h2>
-        <p className="text-center text-sm leading-relaxed">
-          Click a <strong>region</strong> on the map to explore its culture,
-          cuisine, and monuments, then plan your route!
-        </p>
+      <div className="flex flex-col h-full overflow-y-auto">
+        <div className="p-5 border-b bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-4xl">🇹🇳</span>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800">Tunisia</h2>
+              <p className="text-sm text-gray-500" dir="rtl">تونس</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2 mt-3">
+            <Fact label="Capital" value="Tunis" />
+            <Fact label="Population" value="~12.4 million" />
+            <Fact label="Language" value="Arabic, French" />
+            <Fact label="Currency" value="TND (Dinar)" />
+            <Fact label="Area" value="163,610 km²" />
+            <Fact label="Governorates" value="24" />
+          </div>
+          <p className="text-xs text-gray-500 mt-3 leading-relaxed">
+            North African gem on the Mediterranean coast — from the golden beaches of the Sahel to the Saharan dunes of the Jerid, Tunisia offers millennia of history, diverse landscapes, and warm hospitality across its 6 regions.
+          </p>
+        </div>
+
+        <div className="flex-1">
+          {regionIds.map((regionId) => {
+            const region = regions.find((r) => r.id === regionId);
+            const regionGovs = governorates.filter((g) => g.regionId === regionId);
+            const color = colors[regionId] || "#666";
+            if (regionGovs.length === 0) return null;
+
+            return (
+              <div key={regionId} className="px-4 pt-4 pb-2 border-b border-gray-100">
+                <div className="flex items-center gap-2 mb-2">
+                  <span
+                    className="w-2.5 h-2.5 rounded-full inline-block"
+                    style={{ backgroundColor: color }}
+                  />
+                  <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                    {regionNames[regionId]}
+                    {region && <span className="text-gray-300 ms-1.5 normal-case font-normal" dir="rtl">{region.nameAr}</span>}
+                  </h3>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {regionGovs.map((g) => (
+                    <button
+                      key={g.id}
+                      onClick={() => onGovernorateClick(g)}
+                      className="px-3 py-1.5 rounded-lg text-sm font-medium transition-all border hover:shadow-sm active:scale-95"
+                      style={{
+                        borderColor: color,
+                        color: color,
+                        backgroundColor: `${color}08`,
+                      }}
+                    >
+                      {g.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
 
-  const region = selectedRegion;
   const gov = selectedGovernorate;
-  const regionGovs = region
-    ? governorates.filter((g) => g.regionId === region.id)
-    : [];
-  const allMonuments = gov
-    ? gov.monuments
-    : regionGovs.flatMap((g) => g.monuments);
+  const region = regions.find((r) => r.id === gov.regionId);
   const color = region ? colors[region.id] || "#666" : "#666";
 
   return (
     <div className="flex flex-col h-full overflow-y-auto">
-      {/* Region header */}
-      {region && (
-        <div className="p-4 border-b sticky top-0 bg-white z-10">
-          <div className="flex items-center gap-2 mb-1">
-            <span
-              className="w-3 h-3 rounded-full inline-block"
-              style={{ backgroundColor: color }}
-            />
-            <h2 className="text-xl font-bold">{region.name}</h2>
-            <span className="text-sm text-gray-500" dir="rtl">
-              {region.nameAr}
-            </span>
-          </div>
-          <p className="text-sm text-gray-600">{region.description}</p>
-        </div>
-      )}
+      <div className="sticky top-0 bg-white/95 backdrop-blur z-10 border-b">
+        <button
+          onClick={onClearSelection}
+          className="flex items-center gap-1.5 px-4 py-2.5 text-sm text-gray-500 hover:text-gray-800 transition-colors w-full text-left"
+        >
+          <span>←</span>
+          <span>All Governorates</span>
+        </button>
+      </div>
 
-      {/* Governorate detail */}
-      {gov && (
-        <div className="p-4 border-b bg-blue-50">
-          <h3 className="text-lg font-bold text-blue-900">
-            {gov.name}{" "}
-            <span className="text-sm font-normal text-blue-600" dir="rtl">
+      <div className="p-4 bg-blue-50 border-b">
+        <div className="flex items-center gap-2 mb-1">
+          <span
+            className="w-3 h-3 rounded-full inline-block"
+            style={{ backgroundColor: color }}
+          />
+          <h2 className="text-xl font-bold text-blue-900">
+            {gov.name}
+            <span className="text-sm font-normal text-blue-600 ms-2" dir="rtl">
               {gov.nameAr}
             </span>
-          </h3>
+          </h2>
+        </div>
+        {region && (
+          <p className="text-xs text-blue-500 font-medium">{region.name}</p>
+        )}
 
-          <div className="mt-3 space-y-3">
-            <div>
-              <h4 className="text-sm font-semibold text-blue-800 uppercase tracking-wide">
-                Culture & Heritage
-              </h4>
-              <p className="text-sm text-gray-700 mt-0.5">{gov.culture}</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold text-blue-800 uppercase tracking-wide">
-                Traditions
-              </h4>
-              <p className="text-sm text-gray-700 mt-0.5">{gov.traditions}</p>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold text-blue-800 uppercase tracking-wide">
-                Cuisine
-              </h4>
-              <p className="text-sm text-gray-700 mt-0.5">{gov.cuisine}</p>
-            </div>
+        <div className="grid grid-cols-2 gap-2 mt-3 mb-3">
+          <div className="bg-white/70 rounded-lg px-2.5 py-1.5">
+            <p className="text-[10px] text-gray-400 uppercase tracking-wider font-medium">Population</p>
+            <p className="text-sm font-semibold text-gray-700">{gov.population}</p>
+          </div>
+          <div className="bg-white/70 rounded-lg px-2.5 py-1.5">
+            <p className="text-[10px] text-gray-400 uppercase tracking-wider font-medium">Area</p>
+            <p className="text-sm font-semibold text-gray-700">{gov.area}</p>
           </div>
         </div>
-      )}
 
-      {/* Governorates list */}
-      {region && !gov && (
-        <div className="p-4 border-b">
-          <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
-            Governorates
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {regionGovs.map((g) => (
-              <button
-                key={g.id}
-                onClick={() => onGovernorateClick(g)}
-                className="px-3 py-1.5 rounded-full text-sm font-medium border transition-colors hover:bg-gray-100"
-                style={{
-                  borderColor: color,
-                  color: "#333",
-                }}
-              >
-                {g.name}
-              </button>
-            ))}
-          </div>
+        <div className="space-y-2.5">
+          <DetailBlock title="Culture & Heritage" text={gov.culture} />
+          <DetailBlock title="Traditions" text={gov.traditions} />
+          <DetailBlock title="Cuisine" text={gov.cuisine} />
         </div>
-      )}
+      </div>
 
-      {/* Monuments */}
-      {allMonuments.length > 0 && (
+      {gov.monuments.length > 0 && (
         <div className="p-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
-              Famous Monuments ({allMonuments.length})
+              Places to Visit ({gov.monuments.length})
             </h3>
             <button
-              onClick={() => onRequestRoute(allMonuments)}
+              onClick={() => onRequestRoute(gov.monuments)}
               className="px-3 py-1 rounded-full text-xs font-semibold text-white transition-colors hover:opacity-90"
               style={{ backgroundColor: "#e74c3c" }}
             >
               🚗 Plan Route
             </button>
           </div>
-
           <div className="space-y-3">
-            {allMonuments.map((mon) => (
+            {gov.monuments.map((mon) => (
               <MonumentCard key={mon.id} monument={mon} onSelect={onMonumentSelect} />
             ))}
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function Fact({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="bg-white/60 rounded-lg px-2.5 py-1.5">
+      <p className="text-[10px] text-gray-400 uppercase tracking-wider font-medium">{label}</p>
+      <p className="text-sm font-semibold text-gray-700">{value}</p>
+    </div>
+  );
+}
+
+function DetailBlock({ title, text }: { title: string; text: string }) {
+  return (
+    <div>
+      <h4 className="text-xs font-semibold text-blue-800 uppercase tracking-wide">{title}</h4>
+      <p className="text-sm text-gray-700 mt-0.5 leading-relaxed">{text}</p>
     </div>
   );
 }
@@ -171,8 +218,8 @@ function MonumentCard({ monument, onSelect }: { monument: Monument; onSelect: (m
       )}
       <div className="p-3">
         <h4 className="font-semibold text-sm">
-          {monument.name}{" "}
-          <span className="text-xs text-gray-400" dir="rtl">
+          {monument.name}
+          <span className="text-xs text-gray-400 ms-1" dir="rtl">
             {monument.nameAr}
           </span>
         </h4>

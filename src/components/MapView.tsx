@@ -23,51 +23,62 @@ const regionColors: Record<string, string> = {
   sud: "#e67e22",
 };
 
-const frenchToId: Record<string, string> = {
-  Tunis: "tunis",
-  Ariana: "ariana",
-  "Ben Arous": "ben-arous",
-  Mannouba: "manouba",
-  Bizerte: "bizerte",
-  Nabeul: "nabeul",
-  Zaghouan: "zaghouan",
-  "Béja": "beja",
-  Jendouba: "jendouba",
-  "Le Kef": "le-kef",
-  "El Kef": "le-kef",
-  Siliana: "siliana",
-  Sousse: "sousse",
-  Monastir: "monastir",
-  Mahdia: "mahdia",
-  Sfax: "sfax",
-  Kairouan: "kairouan",
-  Kasserine: "kasserine",
-  "Sidi Bouzid": "sidi-bouzid",
-  "Gabès": "gabes",
-  "Médenine": "medenine",
-  Tataouine: "tataouine",
-  Gafsa: "gafsa",
-  Tozeur: "tozeur",
-  "Kébili": "kebili",
+const isoToGovId: Record<string, string> = {
+  "TN-11": "tunis",
+  "TN-12": "ariana",
+  "TN-13": "ben-arous",
+  "TN-14": "manouba",
+  "TN-21": "nabeul",
+  "TN-22": "zaghouan",
+  "TN-23": "bizerte",
+  "TN-31": "beja",
+  "TN-32": "jendouba",
+  "TN-33": "le-kef",
+  "TN-34": "siliana",
+  "TN-41": "kairouan",
+  "TN-42": "kasserine",
+  "TN-43": "sidi-bouzid",
+  "TN-51": "sousse",
+  "TN-52": "monastir",
+  "TN-53": "mahdia",
+  "TN-61": "sfax",
+  "TN-71": "gafsa",
+  "TN-72": "tozeur",
+  "TN-73": "kebili",
+  "TN-81": "gabes",
+  "TN-82": "medenine",
+  "TN-83": "tataouine",
 };
 
-const normalizedFrenchMap: Map<string, string> = new Map();
-for (const [key, val] of Object.entries(frenchToId)) {
-  const norm = key
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-  normalizedFrenchMap.set(norm, val);
-}
+const isoToName: Record<string, string> = {
+  "TN-11": "Tunis",
+  "TN-12": "Ariana",
+  "TN-13": "Ben Arous",
+  "TN-14": "Manouba",
+  "TN-21": "Nabeul",
+  "TN-22": "Zaghouan",
+  "TN-23": "Bizerte",
+  "TN-31": "Béja",
+  "TN-32": "Jendouba",
+  "TN-33": "Le Kef",
+  "TN-34": "Siliana",
+  "TN-41": "Kairouan",
+  "TN-42": "Kasserine",
+  "TN-43": "Sidi Bouzid",
+  "TN-51": "Sousse",
+  "TN-52": "Monastir",
+  "TN-53": "Mahdia",
+  "TN-61": "Sfax",
+  "TN-71": "Gafsa",
+  "TN-72": "Tozeur",
+  "TN-73": "Kébili",
+  "TN-81": "Gabès",
+  "TN-82": "Médenine",
+  "TN-83": "Tataouine",
+};
 
-function getGovernorateId(frenchName: string): string | undefined {
-  const direct = frenchToId[frenchName];
-  if (direct) return direct;
-  const norm = frenchName
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-  return normalizedFrenchMap.get(norm);
+function getGovernorateId(isoCode: string): string | undefined {
+  return isoToGovId[isoCode];
 }
 
 function getGovernorateRegionId(govId: string): string | undefined {
@@ -112,7 +123,7 @@ export default function MapView({
   // Fetch GeoJSON
   useEffect(() => {
     const url =
-      "https://raw.githubusercontent.com/riatelab/tunisie/master/data/TN-gouvernorats.geojson";
+      "https://raw.githubusercontent.com/Mehdi1chouk/Tunisia_Governorates/master/tunisia_administrative_province_state_boundary.geojson";
     fetch(url)
       .then((res) => res.json())
       .then((data) => setGeoData(data))
@@ -126,8 +137,10 @@ export default function MapView({
     const map = L.map(mapContainerRef.current, {
       center: [34.0, 9.5],
       zoom: 7,
+      minZoom: 7,
+      maxZoom: 12,
       maxBounds: [
-        [30.0, 7.0],
+        [29.5, 6.5],
         [38.0, 12.0],
       ] as L.LatLngBoundsExpression,
       maxBoundsViscosity: 1,
@@ -163,8 +176,8 @@ export default function MapView({
     // Group features by region for region fill layers
     const regionFeatures: Record<string, any[]> = {};
     for (const feature of geoData.features) {
-      const frenchName = feature.properties?.gouv_fr;
-      const govId = getGovernorateId(frenchName);
+      const isoCode: string = feature.properties?.iso3166_2;
+      const govId = getGovernorateId(isoCode);
       if (!govId) continue;
       const regionId = getGovernorateRegionId(govId);
       if (!regionId) continue;
@@ -207,8 +220,8 @@ export default function MapView({
     // Layer 2: Governorate polygon layer (on top, interactive)
     geoLayerRef.current = L.geoJSON(geoData as any, {
       style: (feature) => {
-        const frenchName = feature?.properties?.gouv_fr;
-        const govId = getGovernorateId(frenchName);
+        const isoCode: string = feature?.properties?.iso3166_2;
+        const govId = getGovernorateId(isoCode);
         const regionId = govId ? getGovernorateRegionId(govId) : undefined;
         const color = regionId ? regionColors[regionId] : "#999";
         const isSelected = govId === selectedGovIdRef.current;
@@ -223,8 +236,8 @@ export default function MapView({
         };
       },
       onEachFeature: (feature, layer) => {
-        const frenchName = feature.properties?.gouv_fr;
-        const govId = getGovernorateId(frenchName);
+        const isoCode: string = feature.properties?.iso3166_2;
+        const govId = getGovernorateId(isoCode);
         if (!govId) return;
 
         const gov = governorates.find((g) => g.id === govId);
@@ -233,8 +246,10 @@ export default function MapView({
           ? regions.find((r) => r.id === regionId)
           : null;
 
+        const displayName = gov?.name || isoToName[isoCode] || feature.properties?.name || isoCode;
+
         layer.bindTooltip(
-          `<strong>${gov?.name || frenchName}</strong>${
+          `<strong>${displayName}</strong>${
             region ? `<br/><em>${region.name}</em>` : ""
           }`,
           { direction: "center", className: "custom-tooltip" }

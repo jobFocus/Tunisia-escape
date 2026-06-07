@@ -31,12 +31,12 @@ export default function MonumentPopup({ monument, onClose, onNavigate }: Monumen
       <div className="w-full max-w-md bg-white/95 backdrop-blur-xl rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden animate-[slideUp_0.3s_ease-out] sm:mr-4 sm:mb-4 sm:max-w-sm">
         <div className="relative">
           <img
-            src={monument.imageUrl || "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80"}
+            src={monument.imageUrl || "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=400&q=80"}
             alt={monument.name}
             className="w-full h-56 object-cover"
             onError={(e) => {
               (e.target as HTMLImageElement).src =
-                "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&w=400&q=80";
+                "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=400&q=80";
             }}
           />
           <button
