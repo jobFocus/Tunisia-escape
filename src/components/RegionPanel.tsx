@@ -1,4 +1,4 @@
-import type { Region, Governorate, Monument } from "../data/regions";
+import type { Governorate, Monument } from "../data/regions";
 import { governorates } from "../data/governorates";
 import { regions } from "../data/regions";
 
@@ -21,7 +21,6 @@ const regionNames: Record<string, string> = {
 };
 
 interface RegionPanelProps {
-  selectedRegion: Region | null;
   selectedGovernorate: Governorate | null;
   onGovernorateClick: (gov: Governorate | null) => void;
   onClearSelection: () => void;
@@ -30,7 +29,6 @@ interface RegionPanelProps {
 }
 
 export default function RegionPanel({
-  selectedRegion,
   selectedGovernorate,
   onGovernorateClick,
   onClearSelection,

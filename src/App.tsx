@@ -66,7 +66,6 @@ function App() {
       </div>
       <aside className="w-[380px] border-l border-gray-200 bg-white shadow-lg overflow-hidden flex flex-col">
         <RegionPanel
-          selectedRegion={selectedRegion}
           selectedGovernorate={selectedGovernorate}
           onGovernorateClick={handleGovernorateSelect}
           onClearSelection={handleClearSelection}
