@@ -14,8 +14,8 @@ export const governorates: Governorate[] = [
     culture: "Tunis is the cultural and political capital of Tunisia. Its medina is a UNESCO World Heritage site with over 700 monuments. The city is a hub for contemporary art, music festivals, and intellectual life.",
     traditions: "The Festival of the Medina during Ramadan brings traditional music and Sufi chants. Sidi Bou Said's blue-and-white architecture and the annual Carthage Film Festival are iconic.",
     cuisine: "Famous for 'mloukhiya' (a slow-cooked beef stew with jute leaves), 'brik' (crispy pastry with egg and tuna), and fresh Mediterranean seafood at La Goulette.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sidi_Bou_Said.jpg",
-    videoUrl: "https://www.youtube.com/embed/VBcr4TOXEog",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sidi_Bou_Said.jpg/1200px-Sidi_Bou_Said.jpg",
+    videoUrl: "https://www.youtube.com/embed/Uk-4exdq4h8",
     monuments: [
       { id: "carthage", name: "Site of Carthage", nameAr: "موقع قرطاج", description: "Ancient Phoenician and Roman ruins, including the Antonine Baths and the Byrsa Hill acropolis.", lat: 36.8539, lng: 10.3242, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Thermes_Antonins_Carthage.jpg/320px-Thermes_Antonins_Carthage.jpg" },
       { id: "bardo", name: "Bardo National Museum", nameAr: "المتحف الوطني بباردو", description: "Home to the world's largest collection of Roman mosaics, housed in a 15th-century Beylical palace.", lat: 36.8093, lng: 10.1346, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mus%C3%A9e_national_du_Bardo_-_Tunis.jpg/320px-Mus%C3%A9e_national_du_Bardo_-_Tunis.jpg" },
@@ -53,7 +53,7 @@ export const governorates: Governorate[] = [
     culture: "An industrial and residential southern suburb of Tunis. Growing urban area with commercial centers and modern infrastructure.",
     traditions: "Local crafts include pottery and traditional tile-making (zellige). Weekly souks keep traditional commerce alive.",
     cuisine: "Home-style Tunisian cooking — couscous with lamb, 'chakchouka' (stewed peppers and tomatoes with eggs), and fresh market produce.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hammam_Lif.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hammam_Lif.jpg/1200px-Hammam_Lif.jpg",
     monuments: [
       { id: "hammam-lif", name: "Hammam Lif Beach", nameAr: "شاطئ حمام الأنف", description: "Coastal suburb at the foot of Jebel Boukornine with thermal springs used since Roman times.", lat: 36.7333, lng: 10.3333, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hammam_Lif.jpg/320px-Hammam_Lif.jpg" },
     ],
@@ -70,7 +70,7 @@ export const governorates: Governorate[] = [
     culture: "University city west of Tunis, home to several higher education institutions. Rich agricultural plains produce cereals and vegetables.",
     traditions: "Known for equestrian traditions — the National Stud Farm of Sidi Thabet breeds Arabian horses.",
     cuisine: "Farm-fresh dairy products, 'osban' (stuffed lamb tripe), and rustic breads baked in traditional tabouna ovens.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/71/Manouba_palais_la_rose_5.JPG",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Manouba_palais_la_rose_5.JPG/1200px-Manouba_palais_la_rose_5.JPG",
     monuments: [
       { id: "manouba-palace", name: "Manouba Palace", nameAr: "قصر منوبة", description: "19th-century Beylical palace now part of the University of Manouba, with beautiful Andalusian-style gardens.", lat: 36.8078, lng: 10.0997, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Manouba_palais_la_rose_5.JPG/320px-Manouba_palais_la_rose_5.JPG" },
     ],
@@ -89,7 +89,7 @@ export const governorates: Governorate[] = [
     culture: "Tunisia's northernmost city, with a strategic port and medina. A calm Mediterranean town with strong maritime traditions and Andalusian influences.",
     traditions: "The annual Festival of the Sea celebrates fishing heritage. Traditional boat-building crafts survive in the old port.",
     cuisine: "Fresh seafood is king — grilled sea bream, octopus salad, and 'couscous bil hout' (fish couscous). The local olive oil is among Tunisia's finest.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Lac_Ichkeul.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lac_Ichkeul.jpg/1200px-Lac_Ichkeul.jpg",
     monuments: [
       { id: "bizerte-medina", name: "Bizerte Medina & Kasbah", nameAr: "مدينة بنزرت العتيقة", description: "Charming old quarter with a 17th-century kasbah overlooking the port and Mediterranean.", lat: 37.2769, lng: 9.8700, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bizerte_old_harbour.jpg/320px-Bizerte_old_harbour.jpg" },
       { id: "ichkeul", name: "Ichkeul National Park", nameAr: "الحديقة الوطنية بإشكل", description: "UNESCO World Heritage wetland, vital stopover for hundreds of thousands of migratory birds.", lat: 37.1667, lng: 9.6667, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lac_Ichkeul.jpg/320px-Lac_Ichkeul.jpg" },
@@ -108,7 +108,7 @@ export const governorates: Governorate[] = [
     culture: "The capital of Cap Bon, famous for its pottery, ceramics, and citrus orchards. A vibrant coastal city with weekly markets and artisan workshops.",
     traditions: "Renowned for its multicolored pottery and ceramic tiles. The annual Orange Blossom Festival celebrates the citrus harvest. Harissa-making is a cherished tradition.",
     cuisine: "The birthplace of harissa (UNESCO intangible heritage). Known for citrus-based dishes, 'kefteji' (fried vegetable mix), and orange-flower pastries.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hammamet_medina.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hammamet_medina.jpg/1200px-Hammamet_medina.jpg",
     monuments: [
       { id: "neapolis", name: "Neapolis Archaeological Site", nameAr: "موقع نيابوليس الأثري", description: "Roman-era ruins including a well-preserved fish-salting factory (garum) from the 1st century AD.", lat: 36.4575, lng: 10.7328, imageUrl: "https://images.unsplash.com/photo-1599287573448-f9b7cb2c48ed?auto=format&fit=crop&w=400&q=80" },
       { id: "kelibia", name: "Kelibia Fortress", nameAr: "حصن قليبية", description: "16th-century Ottoman fortress perched on a 150m cliff with stunning views of the Mediterranean.", lat: 36.8472, lng: 11.0944, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kelibia_Fortress.jpg/320px-Kelibia_Fortress.jpg" },
@@ -127,7 +127,7 @@ export const governorates: Governorate[] = [
     culture: "A mountainous town famous for its rose cultivation and Roman water engineering. The Zaghouan Aqueduct once supplied water to Carthage over 132 km.",
     traditions: "The Rose Festival (Festival de la Rose) in April/May celebrates the damask rose harvest. Distillation of rose water is a local specialty.",
     cuisine: "Rosewater-flavored sweets and pastries. Mountain herbs flavor local lamb dishes. 'Bssissa' (roasted grain powder) is a traditional breakfast.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Temple_des_eaux_Zaghouan.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Temple_des_eaux_Zaghouan.jpg/1200px-Temple_des_eaux_Zaghouan.jpg",
     monuments: [
       { id: "water-temple", name: "Water Temple of Zaghouan", nameAr: "معبد المياه بزغوان", description: "Roman nymphaeum at the source of the Zaghouan Aqueduct, a monumental semi-circular sanctuary built under Hadrian.", lat: 36.3731, lng: 10.1431, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Temple_des_eaux_Zaghouan.jpg/320px-Temple_des_eaux_Zaghouan.jpg" },
       { id: "djebel-zaghouan", name: "Djebel Zaghouan", nameAr: "جبل زغوان", description: "A 1,295m mountain offering hiking trails, panoramic views, and the marabout of Sidi Bou Gabrine.", lat: 36.3500, lng: 10.1167, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Djebelzaghouan.JPG/320px-Djebelzaghouan.JPG" },
@@ -147,7 +147,7 @@ export const governorates: Governorate[] = [
     culture: "An ancient agricultural city nicknamed 'the granary of Rome'. Surrounded by wheat fields and oak forests in the fertile Medjerda valley.",
     traditions: "The annual Wheat Festival celebrates the harvest. Traditional bread-making in tabouna ovens and olive oil pressing are central to local identity.",
     cuisine: "Hearty mountain cuisine — 'borghol' (cracked wheat soup), grilled lamb, and 'khobz tabouna' (traditional oven bread). Known for excellent honey and dairy.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Dougga_capitole.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Dougga_capitole.jpg/1200px-Dougga_capitole.jpg",
     monuments: [
       { id: "beja-kasbah", name: "Kasbah of Béja", nameAr: "قصبة باجة", description: "A Byzantine-era fortress rebuilt under the Ottomans, dominating the city from its hilltop perch.", lat: 36.7250, lng: 9.1833, imageUrl: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=400&q=80" },
       { id: "dougga", name: "Dougga", nameAr: "دقة", description: "UNESCO World Heritage site — the best-preserved Roman small town in North Africa, with a magnificent Capitol, theatre, and mausoleum.", lat: 36.4228, lng: 9.2203, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Dougga_capitole.jpg/320px-Dougga_capitole.jpg" },
@@ -165,7 +165,7 @@ export const governorates: Governorate[] = [
     culture: "Gateway to the Kroumirie mountains with lush cork oak forests, rare in North Africa. A region of natural beauty and Roman archaeological treasures.",
     traditions: "Forest-based livelihoods — cork harvesting, woodworking, and beekeeping. Traditional hunting with Saluki dogs has deep roots.",
     cuisine: "Game dishes — wild boar and partridge. Truffles foraged from oak forests. 'Mhamsa' (hand-rolled couscous) with slow-cooked lamb.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Bulla_Regia_Maison_de_la_chasse.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bulla_Regia_Maison_de_la_chasse.jpg/1200px-Bulla_Regia_Maison_de_la_chasse.jpg",
     monuments: [
       { id: "bulla-regia", name: "Bulla Regia", nameAr: "بولا ريجيا", description: "UNESCO-listed Roman city famous for its unique underground villas with intact mosaics, built to escape summer heat.", lat: 36.5589, lng: 8.7539, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bulla_Regia_Maison_de_la_chasse.jpg/320px-Bulla_Regia_Maison_de_la_chasse.jpg" },
       { id: "chemptou", name: "Chemtou Museum", nameAr: "متحف شمتو", description: "Ancient marble quarries that supplied the rare yellow Numidian marble to imperial Rome, with a modern museum.", lat: 36.4833, lng: 8.5833, imageUrl: "https://images.unsplash.com/photo-1566127992631-137a642a90c4?auto=format&fit=crop&w=400&q=80" },
@@ -184,7 +184,7 @@ export const governorates: Governorate[] = [
     culture: "A hilltop city with a rich Numidian, Roman, and Ottoman heritage. Known as Sicca Veneria in antiquity, a strategic crossroads for millennia.",
     traditions: "The Sidi Bou Makhlouf Festival celebrates Sufi heritage. Traditional weaving of woolen burnous (cloaks) and carpets.",
     cuisine: "Known for 'borzgane' (sweet couscous with dried fruits and nuts), 'kammounia' (cumin-spiced liver stew), and mountain honey.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/5e/El_Kasbah_-_Le_Kef_%285410398636%29.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/El_Kasbah_-_Le_Kef_%285410398636%29.jpg/1200px-El_Kasbah_-_Le_Kef_%285410398636%29.jpg",
     monuments: [
       { id: "le-kef-kasbah", name: "Kasbah of Le Kef", nameAr: "قصبة الكاف", description: "18th-century Ottoman fortress with panoramic views over the Medjerda plains and into Algeria.", lat: 36.1819, lng: 8.7069, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/El_Kasbah_-_Le_Kef_%285410398636%29.jpg/320px-El_Kasbah_-_Le_Kef_%285410398636%29.jpg" },
       { id: "le-kef-basilica", name: "Basilica of St. Peter", nameAr: "بازيليك القديس بطرس", description: "5th-century Byzantine basilica with remnants of mosaic floors and a baptistery.", lat: 36.1750, lng: 8.7031, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Le_Kef_-_Abside_de_la_basilique_Saint-Pierre.jpg/320px-Le_Kef_-_Abside_de_la_basilique_Saint-Pierre.jpg" },
@@ -202,7 +202,7 @@ export const governorates: Governorate[] = [
     culture: "An agricultural region known for cereal farming and livestock. The landscape is dotted with Roman archaeological sites and traditional farmsteads.",
     traditions: "Equestrian culture thrives — horseback festivals and Fantasia (traditional cavalry charge) displays. Wool weaving and pottery are common crafts.",
     cuisine: "Farm-to-table cooking — grilled lamb, fresh cheeses, and 'mlaoui' (layered flatbread). The region produces excellent olive oil.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Makthar_forum.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Makthar_forum.jpg/1200px-Makthar_forum.jpg",
     monuments: [
       { id: "maktaris", name: "Maktaris (Makthar)", nameAr: "مكثر", description: "Major Roman-Numidian archaeological site with a forum, triumphal arch, and well-preserved baths at 900m altitude.", lat: 35.8556, lng: 9.2069, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Makthar_forum.jpg/320px-Makthar_forum.jpg" },
     ],
@@ -221,8 +221,8 @@ export const governorates: Governorate[] = [
     culture: "The 'Pearl of the Sahel', a vibrant coastal city with a UNESCO-listed medina. A major tourist destination blending beach resorts with rich history.",
     traditions: "The annual International Festival of Sousse showcases music and theatre. Traditional embroidery ('tarz soussi') is a distinctive local craft.",
     cuisine: "Seafood along the port — grilled sardines, 'calamar farci' (stuffed squid). 'Rfissa' (layered pastry with chicken and fenugreek sauce) is a festive dish.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/64/Sousse_Ribat.jpg",
-    videoUrl: "https://www.youtube.com/embed/J0eHGx0HFLU",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sousse_Ribat.jpg/1200px-Sousse_Ribat.jpg",
+    videoUrl: "https://www.youtube.com/embed/HwxZG6voWdA",
     monuments: [
       { id: "sousse-medina", name: "Medina of Sousse", nameAr: "مدينة سوسة العتيقة", description: "UNESCO World Heritage walled city with narrow alleys, souks, and the impressive Ribat fortress-monastery.", lat: 35.8333, lng: 10.6333, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sousse_Ribat.jpg/320px-Sousse_Ribat.jpg" },
       { id: "sousse-museum", name: "Sousse Archaeological Museum", nameAr: "المتحف الأثري بسوسة", description: "Housed in the 11th-century kasbah, featuring one of Tunisia's finest Roman mosaic collections.", lat: 35.8217, lng: 10.6353, imageUrl: "https://images.unsplash.com/photo-1590756259260-1f7c05d381ba?auto=format&fit=crop&w=400&q=80" },
@@ -241,7 +241,7 @@ export const governorates: Governorate[] = [
     culture: "Birthplace of Habib Bourguiba, the first president of Tunisia. A historic coastal city with a magnificent ribat and modern marina.",
     traditions: "The Ribat Festival features traditional music and folklore performances. The city honors its fishing heritage with maritime celebrations.",
     cuisine: "Fresh catch of the day at the port restaurants. 'Fricassé' (fried dough sandwich with tuna) is a beloved street food. Olive oil from nearby groves.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Ribat_Monastir.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ribat_Monastir.jpg/1200px-Ribat_Monastir.jpg",
     monuments: [
       { id: "monastir-ribat", name: "Ribat of Monastir", nameAr: "رباط المنستير", description: "8th-century Islamic fortress-monastery, one of the oldest and most impressive in North Africa, featured in several films.", lat: 35.7767, lng: 10.8317, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ribat_Monastir.jpg/320px-Ribat_Monastir.jpg" },
       { id: "bourguiba-mausoleum", name: "Bourguiba Mausoleum", nameAr: "ضريح بورقيبة", description: "Grand mausoleum of Habib Bourguiba with twin minarets, a golden dome, and a small museum of his personal effects.", lat: 35.7775, lng: 10.8292, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Monastir_Bourguiba_Mosque.jpg/320px-Monastir_Bourguiba_Mosque.jpg" },
@@ -259,7 +259,7 @@ export const governorates: Governorate[] = [
     culture: "A historic port city on a narrow peninsula, once the capital of the Fatimid Caliphate. Known for its silk weaving and laid-back seaside charm.",
     traditions: "The Festival of the Sea celebrates the deep maritime heritage. Mahdia is famous for its hand-woven silk wedding dresses ('safsari'). Traditional fishing methods are still used.",
     cuisine: "Renowned for 'couscous bil samak' (fish couscous) — considered Tunisia's best. Grilled octopus and cuttlefish are local specialties. Sweet 'makroudh' (date pastries).",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Amphitheatre_of_El_Jem.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Amphitheatre_of_El_Jem.jpg/1200px-Amphitheatre_of_El_Jem.jpg",
     monuments: [
       { id: "mahdia-medina", name: "Mahdia Medina & Skifa Kahla", nameAr: "سقيفة الكحلة", description: "The massive 10th-century fortified gate (Skifa Kahla) leads into the charming medina on the peninsula.", lat: 35.5042, lng: 11.0683, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Skifa_Kahla_Mahdia.jpg/320px-Skifa_Kahla_Mahdia.jpg" },
       { id: "mahdia-cemetery", name: "Fatimid Marine Cemetery", nameAr: "مقبرة البحر", description: "Ancient seaside cemetery with white tombs overlooking the Mediterranean, dating from Fatimid times.", lat: 35.5083, lng: 11.0736, imageUrl: "https://images.unsplash.com/photo-1591474200742-8e512e6f98b0?auto=format&fit=crop&w=400&q=80" },
@@ -278,7 +278,7 @@ export const governorates: Governorate[] = [
     culture: "Tunisia's second-largest city and economic powerhouse. The medina is one of the best-preserved Arab-Muslim walled cities in the Mediterranean.",
     traditions: "Known for skilled artisans — silversmiths, wood carvers, and weavers. The Sfax International Festival of Music showcases diverse traditions.",
     cuisine: "Famous for 'charmoula' (flavorful marinade for fish), 'marka' (slow-cooked meat stews), and a unique variation of 'couscous sfaxi'. The port supplies the country's best seafood.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/67/Sfax_medina.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sfax_medina.jpg/1200px-Sfax_medina.jpg",
     monuments: [
       { id: "sfax-medina", name: "Medina of Sfax", nameAr: "مدينة صفاقس العتيقة", description: "Impeccably preserved 9th-century walled medina with monumental gates, covered souks, and the Great Mosque.", lat: 34.7369, lng: 10.7617, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sfax_medina.jpg/320px-Sfax_medina.jpg" },
       { id: "sfax-kasbah", name: "Kasbah of Sfax", nameAr: "قصبة صفاقس", description: "16th-century fortress housing an architectural museum and offering views over the medina and port.", lat: 34.7342, lng: 10.7631, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Les_murs_de_la_medina_de_sfax_du_cot%C3%A9_kasbah.jpg/320px-Les_murs_de_la_medina_de_sfax_du_cot%C3%A9_kasbah.jpg" },
@@ -299,8 +299,8 @@ export const governorates: Governorate[] = [
     culture: "The fourth holiest city in Islam and a UNESCO World Heritage site. Founded in 670 AD, it is the spiritual and architectural heart of Tunisia.",
     traditions: "Seven pilgrimages to Kairouan equal one to Mecca (popular belief). The Mouled Festival (Prophet's birthday) is the year's biggest celebration. Carpet weaving is the city's signature craft.",
     cuisine: "Famous for 'makroudh Kairouani' (semolina date cookies), considered Tunisia's finest. 'Kafteji' and 'lablabi' (chickpea soup) are beloved street foods.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Mosque_of_Kairouan.jpg",
-    videoUrl: "https://www.youtube.com/embed/Qg9My2KzN14",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Kairouan.jpg/1200px-Great_Mosque_of_Kairouan.jpg",
+    videoUrl: "https://www.youtube.com/embed/Un5P3FOaFE4",
     monuments: [
       { id: "great-mosque-kairouan", name: "Great Mosque of Kairouan", nameAr: "جامع عقبة بن نافع", description: "One of the oldest and most important mosques in the Islamic world, with a massive 9th-century minaret and pillared prayer hall.", lat: 35.6814, lng: 10.1011, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Kairouan.jpg/320px-Great_Mosque_of_Kairouan.jpg" },
       { id: "aghlabid-basins", name: "Aghlabid Basins", nameAr: "أحواض الأغالبة", description: "9th-century hydraulic marvel — two enormous circular water reservoirs that supplied the city, a testament to medieval Arab engineering.", lat: 35.6850, lng: 10.1000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bassins_des_Aghlabides_Kairouan.jpg/320px-Bassins_des_Aghlabides_Kairouan.jpg" },
@@ -319,7 +319,7 @@ export const governorates: Governorate[] = [
     culture: "Mountainous region at the foot of the Dorsal mountain range. A land of rugged beauty, Roman history, and Berber traditions at the gateway to the steppes.",
     traditions: "Berber weaving traditions with distinctive geometric patterns. The Spring Festival celebrates the blooming of wildflowers across the steppes.",
     cuisine: "Lamb and goat dishes dominate — 'mechoui' (slow-roasted lamb). Wild herbs and thyme flavor rustic stews. Mountain honey and 'bsissa' are staples.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sbeitla_temples.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sbeitla_temples.jpg/1200px-Sbeitla_temples.jpg",
     monuments: [
       { id: "sbeitla", name: "Sbeitla (Sufetula)", nameAr: "سبيطلة", description: "Incredibly well-preserved Roman city with three adjacent temples to Jupiter, Juno, and Minerva, plus Byzantine fortifications.", lat: 35.2306, lng: 9.1294, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sbeitla_temples.jpg/320px-Sbeitla_temples.jpg" },
       { id: "chambi", name: "Djebel Chambi National Park", nameAr: "الحديقة الوطنية بالشعانبي", description: "Tunisia's highest peak (1,544m) with Aleppo pine forests, panoramic views, and hiking trails.", lat: 35.1833, lng: 8.7000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Djebel_Chambi.jpg/320px-Djebel_Chambi.jpg" },
@@ -356,7 +356,7 @@ export const governorates: Governorate[] = [
     culture: "A coastal oasis city where the desert meets the sea. Known for its unique maritime oasis and as a gateway to the Sahara.",
     traditions: "The annual Festival of the Oasis celebrates the region's unique ecosystem. Traditional henna art and basket weaving from palm fronds are local crafts.",
     cuisine: "Oasis produce — pomegranates, dates, and aromatic herbs. Spicy 'merguez' sausages and 'brik à l'oeuf' are popular. Seafood from the Gulf of Gabès.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/5/56/Matmata_cave_dwelling.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Matmata_cave_dwelling.jpg/1200px-Matmata_cave_dwelling.jpg",
     monuments: [
       { id: "gabes-oasis", name: "Gabès Maritime Oasis", nameAr: "واحة قابس", description: "The only coastal oasis on the Mediterranean — 300 hectares of palm groves, fruit trees, and gardens right by the sea.", lat: 33.8833, lng: 10.0833, imageUrl: "https://images.unsplash.com/photo-1533436047439-9d5e6c2e5f5b?auto=format&fit=crop&w=400&q=80" },
       { id: "matmata", name: "Matmata Troglodyte Houses", nameAr: "منازل مطماطة", description: "Iconic underground Berber dwellings carved into the earth, famously featured in Star Wars as Luke Skywalker's home.", lat: 33.5428, lng: 9.9686, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Matmata_cave_dwelling.jpg/320px-Matmata_cave_dwelling.jpg" },
@@ -374,8 +374,8 @@ export const governorates: Governorate[] = [
     culture: "The capital of the Jeffara plain, crossroads of caravan routes between the Sahara and the coast. Home to the legendary island of Djerba.",
     traditions: "Djerba's annual Festival of the Synagogue (El Ghriba) draws pilgrims from across North Africa. Traditional pottery from Guellala and exquisite silver jewelry define local crafts.",
     cuisine: "Djerba's 'couscous djerbien' features spiced fish and raisins. 'Chakchouka djerbienne' (a thicker, tomato-based variant). Fresh dates and figs from the oasis.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/7/73/Djerba_beach.jpg",
-    videoUrl: "https://www.youtube.com/embed/1bLyP7K1yqA",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Djerba_beach.jpg/1200px-Djerba_beach.jpg",
+    videoUrl: "https://www.youtube.com/embed/FpYY9ZRonws",
     monuments: [
       { id: "djerba", name: "Djerba Island", nameAr: "جزيرة جربة", description: "UNESCO World Heritage island known for its white sandy beaches, ancient synagogue, and distinctive white-domed mosques.", lat: 33.8000, lng: 10.9000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Djerba_beach.jpg/320px-Djerba_beach.jpg" },
       { id: "el-ghriba", name: "El Ghriba Synagogue", nameAr: "معبد الغريبة", description: "One of the oldest synagogues in Africa, dating back 2,600 years, situated on the island of Djerba.", lat: 33.8147, lng: 10.8586, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Synagogue_de_la_Ghriba_Djerba.jpg/320px-Synagogue_de_la_Ghriba_Djerba.jpg" },
@@ -394,8 +394,8 @@ export const governorates: Governorate[] = [
     culture: "The deep Saharan south — land of ksour (Berber granaries), dramatic desert landscapes, and palm-fringed oases. The region gave its name to Star Wars' Tatooine.",
     traditions: "The annual Ksour Festival celebrates Berber heritage with music, dance, and camel races. Traditional weaving of 'fouta' (cotton wraps) and nomadic tent-making.",
     cuisine: "Bedouin cooking — 'lahma bil zit' (meat preserved in olive oil), flatbread baked in sand embers, and sweet dates stuffed with almond paste.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chenini_view.jpg",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chenini_view.jpg/1200px-Chenini_view.jpg",
+
     monuments: [
       { id: "chenini", name: "Chenini Village", nameAr: "قرية شنيني", description: "Spectacular hilltop Berber village with ancient whitewashed dwellings built into the cliff face overlooking a palm oasis.", lat: 32.9114, lng: 10.2631, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chenini_view.jpg/320px-Chenini_view.jpg" },
       { id: "ksar-oulad-soltan", name: "Ksar Ouled Soltane", nameAr: "قصر أولاد سلطان", description: "Stunning four-story ksar (fortified granary) used to store grain — famously featured as the slave quarters in Star Wars: The Phantom Menace.", lat: 32.7886, lng: 10.5147, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ksar_Ouled_Soltane.jpg/320px-Ksar_Ouled_Soltane.jpg" },
@@ -431,8 +431,8 @@ export const governorates: Governorate[] = [
     culture: "The jewel of the Jerid — a magnificent oasis city with distinctive brick architecture, vast palm groves, and a gateway to the Sahara's most dramatic landscapes.",
     traditions: "The International Oasis Festival showcases desert culture and music. The unique brickwork patterns (tozeurienne brick architecture) adorn every building.",
     cuisine: "Dates from Tozeur are legendary — hundreds of varieties. 'Date au beurre' (dates stuffed with butter) is a local delicacy. Spiced camel meat dishes and couscous berbère.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tozeur_medina.jpg",
-    videoUrl: "https://www.youtube.com/embed/7CZnSfmUJzM",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tozeur_medina.jpg/1200px-Tozeur_medina.jpg",
+    videoUrl: "https://www.youtube.com/embed/YXr_4GdFKwI",
     monuments: [
       { id: "tozeur-medina", name: "Medina of Tozeur (Ouled El Hadef)", nameAr: "مدينة توزر العتيقة", description: "Enchanting old quarter famous for its intricate geometric brick facades — a unique architectural style found nowhere else.", lat: 33.9208, lng: 8.1353, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tozeur_medina.jpg/320px-Tozeur_medina.jpg" },
       { id: "chebika", name: "Chebika Oasis", nameAr: "واحة الشبيكة", description: "Stunning mountain oasis with a waterfall cascading into a palm-filled canyon — one of Tunisia's most beautiful natural sites.", lat: 34.3236, lng: 7.9472, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chebika_oasis.jpg/320px-Chebika_oasis.jpg" },
@@ -451,7 +451,7 @@ export const governorates: Governorate[] = [
     culture: "One of the oldest oases in Tunisia, set against the vast Chott el Jerid salt lake. A region of date palms, nomadic heritage, and breathtaking desert scenery.",
     traditions: "The Date Festival celebrates the autumn harvest. Nomadic Bedouin traditions — camel herding, storytelling, and poetry — remain alive.",
     cuisine: "The world's finest Deglet Nour dates come from Kébili. 'Rouz jerbi' (spiced rice with meat). Sweet 'ghraiba' cookies and date syrup are staples.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/8/83/Chott_el_Djerid.jpg",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Chott_el_Djerid.jpg/1200px-Chott_el_Djerid.jpg",
     monuments: [
       { id: "chott-el-jerid", name: "Chott El Jerid", nameAr: "شط الجريد", description: "Tunisia's vast salt lake — a surreal landscape of shimmering salt crust spanning 7,000 km², creating mirages and magical sunsets.", lat: 33.7000, lng: 8.5000, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Chott_el_Djerid.jpg/320px-Chott_el_Djerid.jpg" },
       { id: "douz", name: "Douz — Gateway to the Sahara", nameAr: "دوز — بوابة الصحراء", description: "The 'door of the Sahara' — a palm-fringed oasis town hosting the famous International Sahara Festival with camel races and desert music.", lat: 33.4583, lng: 9.0250, imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Douz_camel_market.jpg/320px-Douz_camel_market.jpg" },

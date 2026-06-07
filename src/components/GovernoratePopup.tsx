@@ -11,8 +11,8 @@ interface GovernoratePopupProps {
 
 function to4k(url: string): string {
   return url
-    .replace(/\/320px-/, "/")
-    .replace(/w=400&q=80/, "w=1920&q=90");
+    .replace("/320px-", "/1200px-")
+    .replace("w=400&q=80", "w=1920&q=90");
 }
 
 export default function GovernoratePopup({
