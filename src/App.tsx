@@ -6,13 +6,11 @@ import type { Region, Governorate, Monument } from "./data/regions";
 import { governorates } from "./data/governorates";
 
 function App() {
-  const [selectedRegion, setSelectedRegion] = useState<Region | null>(null);
   const [selectedGovernorate, setSelectedGovernorate] = useState<Governorate | null>(null);
   const [routeWaypoints, setRouteWaypoints] = useState<[number, number][] | null>(null);
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
 
   const handleRegionSelect = useCallback((region: Region) => {
-    setSelectedRegion(region);
     setSelectedGovernorate(null);
     setRouteWaypoints(null);
   }, []);
@@ -22,7 +20,6 @@ function App() {
   }, []);
 
   const handleClearSelection = useCallback(() => {
-    setSelectedRegion(null);
     setSelectedGovernorate(null);
     setRouteWaypoints(null);
   }, []);
