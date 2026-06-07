@@ -20,6 +20,8 @@ export interface Governorate {
   culture: string;
   traditions: string;
   cuisine: string;
+  heroImage: string;
+  videoUrl?: string;
   monuments: Monument[];
 }
 

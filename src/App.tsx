@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import MapView from "./components/MapView";
 import RegionPanel from "./components/RegionPanel";
 import MonumentPopup from "./components/MonumentPopup";
+import GovernoratePopup from "./components/GovernoratePopup";
 import type { Region, Governorate, Monument } from "./data/regions";
 import { governorates } from "./data/governorates";
 
@@ -9,6 +10,7 @@ function App() {
   const [selectedGovernorate, setSelectedGovernorate] = useState<Governorate | null>(null);
   const [routeWaypoints, setRouteWaypoints] = useState<[number, number][] | null>(null);
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
+  const [showGovPopup, setShowGovPopup] = useState(false);
 
   const handleRegionSelect = useCallback((_region: Region) => {
     setSelectedGovernorate(null);
@@ -17,6 +19,7 @@ function App() {
 
   const handleGovernorateSelect = useCallback((gov: Governorate | null) => {
     setSelectedGovernorate(gov);
+    if (gov) setShowGovPopup(true);
   }, []);
 
   const handleClearSelection = useCallback(() => {
@@ -31,10 +34,15 @@ function App() {
 
   const handleMonumentSelect = useCallback((monument: Monument) => {
     setSelectedMonument(monument);
+    setShowGovPopup(false);
   }, []);
 
   const handleCloseMonument = useCallback(() => {
     setSelectedMonument(null);
+  }, []);
+
+  const handleCloseGovPopup = useCallback(() => {
+    setShowGovPopup(false);
   }, []);
 
   const handleNavigateToMonument = useCallback((monument: Monument) => {
@@ -44,8 +52,13 @@ function App() {
     if (gov) {
       handleGovernorateSelect(gov);
     }
-    setSelectedMonument(null);
+    setSelectedMonument(monument);
+    setShowGovPopup(false);
   }, [handleGovernorateSelect]);
+
+  const handleGovPopupSelect = useCallback((gov: Governorate | null) => {
+    setSelectedGovernorate(gov);
+  }, []);
 
   return (
     <div className="flex w-full h-screen">
@@ -75,6 +88,14 @@ function App() {
           monument={selectedMonument}
           onClose={handleCloseMonument}
           onNavigate={handleNavigateToMonument}
+        />
+      )}
+      {showGovPopup && selectedGovernorate && (
+        <GovernoratePopup
+          governorate={selectedGovernorate}
+          onClose={handleCloseGovPopup}
+          onNavigateToMonument={handleNavigateToMonument}
+          onSelectGovernorate={handleGovPopupSelect}
         />
       )}
     </div>
