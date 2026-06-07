@@ -23,7 +23,7 @@ export default function GovernoratePopup({
 }: GovernoratePopupProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
-  const carouselTimer = useRef<ReturnType<typeof setInterval>>();
+  const carouselTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const [showVideo, setShowVideo] = useState(false);
 
   const images = governorate.monuments.map((m) => to4k(m.imageUrl));
